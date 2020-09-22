@@ -35,7 +35,12 @@ namespace ConsoleApp0922_2
         static void Main(string[] args)
         {
             Math m1 = new Math();
-            m1.Sosu(3, 100);
+            Console.WriteLine("=============소수 구하기=============");
+            Console.Write("시작 숫자 : ");
+            int fnum = int.Parse(Console.ReadLine());
+            Console.Write("끝 숫자 : ");
+            int lnum = int.Parse(Console.ReadLine());
+            m1.Sosu(fnum, lnum);
         }
     }
 }
